@@ -2,23 +2,6 @@ package JudyL;
 
 import java.util.Scanner;
 
-public class Main {
-
-    public static void main(String[] args) {
-
-       JudyLLib.GuessGame1(0);
-
-	// write your code here
-    }
-}
-
-
-
-
-package JudyL;
-
-        import java.util.Scanner;
-
 public class JudyLLib {
 
     public static void GuessGame1(int run) {
@@ -53,4 +36,3 @@ public class JudyLLib {
         System.out.println("")
     }
 }
-
