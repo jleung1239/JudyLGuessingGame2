@@ -45,8 +45,6 @@ public class JudyLLib {
                 System.out.println("Is your number " +guess+ "?");
                 answer = input.nextLine();
             }
-            System.out.println("Yay! Your number was: " +guess+ ".");
-            System.out.println("I guessed " +guessnum+ " times before I got to the right answer.");
         }
         System.out.println("Yay! Your number was: " +guess+ ".");
         System.out.println("I guessed " +guessnum+ " times before I got to the right answer.");
