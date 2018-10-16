@@ -27,13 +27,13 @@ public class JudyLLib {
         Scanner input = new Scanner(System.in);
         System.out.println("Is your number 50? (Type: too high / too low / correct )");
         String answer = input.nextLine();
-        while (!(answer.equals("correct")) || !(answer.equals("Correct")))
+        while (!(answer.equals("correct")) && !(answer.equals("Correct")))
         {
             if ((answer.equals("too high")) || (answer.equals("Too high")))
             {
                 guessnum++;
                 max = guess;
-                guess = max/2;
+                guess = (max+min)/2;
                 System.out.println("Is your number " +guess+ "?");
                 answer = input.nextLine();
             }
@@ -41,12 +41,12 @@ public class JudyLLib {
             {
                 guessnum++;
                 min = guess;
-                guess = ((max+min))/2;
+                guess = (max+min)/2;
                 System.out.println("Is your number " +guess+ "?");
                 answer = input.nextLine();
             }
         }
         System.out.println("Yay! Your number was: " +guess+ ".");
-        System.out.println("I guessed " +guessnum+ " times before I got to the right answer.");
+        System.out.println("I guessed " +guessnum+ " time(s) before I got to the right answer.");
     }
 }
